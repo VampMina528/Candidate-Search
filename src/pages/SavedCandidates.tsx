@@ -1,14 +1,5 @@
 import { useEffect, useState } from 'react';
-
-interface Candidate {
-  name: string;
-  login: string;
-  location: string;
-  avatar_url: string;
-  email: string | null;
-  html_url: string;
-  company: string | null;
-}
+import Candidate from '../interfaces/Candidate.interface';
 
 const SavedCandidates = () => {
   const [savedCandidates, setSavedCandidates] = useState<Candidate[]>([]);
